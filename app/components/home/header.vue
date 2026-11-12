@@ -8,7 +8,7 @@ const pages = {
 </script>
 
 <template>
-  <div class="w-screen px-[120px] py-[32px] flex items-center justify-between uppercase font-['Space_Mono'] tracking-[12%] z-20 relative">
+  <div class="w-full px-[120px] py-[32px] flex items-center justify-between uppercase font-['Space_Mono'] tracking-[12%] z-20 relative">
     <RouterLink to="#home" class="relative flex items-center gap-4 hover:underline">
       <div class="rounded-full w-4 h-4 bg-emerald-300 shadow-md shadow-emerald-300/50"></div>
       Stan Broersma

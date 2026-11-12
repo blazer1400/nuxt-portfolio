@@ -6,4 +6,12 @@
   --color-aurora-dark: #55afa6;
   --color-inverse: #05060F;
   --color-subtle: #2A3156;
+  --color-rocket: #acaaa9;
+  --color-void: #030409;
+}
+
+html,
+body {
+  overflow-x: clip;
+  scroll-behavior: smooth;
 }
