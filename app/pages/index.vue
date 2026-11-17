@@ -126,7 +126,7 @@ onBeforeUnmount(() => ctx?.revert())
     <AssetsRocket id="rocket" class="absolute z-20 left-[20%] -top-20 w-28 h-max" />
 
     <!-- assets -->
-    <AssetsSphere id="earth" ref="earth" class="w-6xl h-max absolute left-1/2 bottom-0" />
+    <AssetsSphere id="earth" ref="earth" class="w-6xl h-max absolute left-1/2 bottom-0 z-10" />
     <AssetsNebula color="#5B2A86" class="absolute -top-80 -left-80" />
     <AssetsNebula color="#1E6F8C" class="absolute -bottom-1/2 -right-1/4" />
     <AssetsStars class="absolute top-0 left-0 w-full h-full z-0"/>
@@ -158,9 +158,17 @@ onBeforeUnmount(() => ctx?.revert())
 
   <section id="work" ref="work" class="w-full z-10 h-screen relative bg-void">
     <div class="w-7xl mx-auto py-20">
-      <Eyebrow>02 <span class="mx-8">/</span> Work</Eyebrow>
+      <div class="space-y-8">
+        <Eyebrow>02 <span class="mx-8">/</span> Work</Eyebrow>
+        <CommonSectionTitle class="">Selected missions</CommonSectionTitle>
+        <p class="text-muted text-lg">A few things I've built recently, from SaaS platforms to the servers they run on.</p>
+      </div>
+      <div class="mt-20">
+        <HomeWorkCard />
+      </div>
     </div>
 
+    <AssetsNebula color="#5B2A86" class="absolute -top-1/4 -right-1/4" />
     <AssetsNebula color="#B23A7A" class="absolute -bottom-1/2 -left-1/4" />
   </section>
 </template>

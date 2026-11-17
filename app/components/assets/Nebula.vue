@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div :class="'bg-[radial-gradient(circle_closest-side,'+color+',transparent)]'"
+  <div :style="{ backgroundImage: `radial-gradient(circle closest-side, ${color}, transparent)` }"
       class="z-0 pointer-events-none w-[900px] h-[900px] opacity-55"></div>
 </template>
 
